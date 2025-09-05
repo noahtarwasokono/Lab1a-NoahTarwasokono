@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Task List</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <a href="#">Home</a>
+  </nav>
+
+  <h1>Task List</h1>
+
+  <div>
+    <input type="checkbox" id="sort">
+    <label for="sort">Sort by date</label>
+  </div>
+  <div>
+    <input type="checkbox" id="filter"
+    <label for="filter">Filter completed tasks</label>
+  </div>
+
+  <ul>
+    <li>
+        <input type="checkbox" />
+        <span>Finish lab writeup</span>
+        <span>09-06-2025</span>
+        <button>delete</button>
+    </li>
+    <li>
+        <input type="checkbox" />
+        <span>Push code to Github</span>
+        <span>09-07-2025</span>
+        <button>delete</button>
+    </li>
+  </ul>
+
+  <form>
+    <div>
+        <input type="text" name="description" required placeholder="Task Description" />
+    </div>
+    <div>
+        <input type="date" name="date" required />
+    </div>
+    <div>
+        <button type="submit">Create Task</button>
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
